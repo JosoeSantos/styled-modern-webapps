@@ -7,7 +7,7 @@ interface SlideContainerProps {
 
 const StyledContainer = styled.div`
     --height: 43vw;
-    background-color: #FFF;
+    background-color: var(--background-color);
     height: var(--height);
     width: calc(calc(var(--height) / 3) * 4);
     justify-self: center;

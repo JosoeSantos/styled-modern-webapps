@@ -1,6 +1,15 @@
 import { createGlobalStyle } from "styled-components";
 
+import Theme from "./Theme";
+
 export default createGlobalStyle`
+  :root {
+    --primary-color: ${Theme.primaryColor};
+    --secondary-color: ${Theme.secondaryColor};
+    --accent-color: ${Theme.accentColor};
+    --background-color: ${Theme.backgroundColor};
+  }
+
   * {
     margin: 0;
     padding: 0;
@@ -10,6 +19,7 @@ export default createGlobalStyle`
 
   body {
     -webkit-font-smoothing: antialiased;
+    font-family: Roboto, sans-serif;
   }
 
   body, input, button {

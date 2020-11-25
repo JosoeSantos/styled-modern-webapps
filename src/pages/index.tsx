@@ -12,7 +12,7 @@ const StyledPage = styled.div`
   justify-content: center;
   
   background: rgb(104,44,254);
-  background: linear-gradient(30deg, rgba(104,44,254,1) 0%, rgba(168,25,25,1) 100%);
+  background: linear-gradient(30deg, var(--primary-color) 0%, var(--secondary-color));
 `;
 
 export default function Home() {
