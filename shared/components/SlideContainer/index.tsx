@@ -1,29 +1,32 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import { Container, Slide } from "./styles";
 
+import SwiperCore, { Pagination } from "swiper";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+SwiperCore.use([Pagination]);
 interface SlideContainerProps {
-    children: React.ReactNode 
+  children: React.ReactNode;
 }
 
-const StyledContainer = styled.div`
-    --height: 43vw;
-    background-color: var(--background-color);
-    height: var(--height);
-    width: calc(calc(var(--height) / 3) * 4);
-    justify-self: center;
-    align-self: center;
-    box-shadow: 5px 5px 15px 5px #0000004d;
-    border-radius: 5px;
-    overflow: hidden;
-`;
-
 const SlideContainer = (props: SlideContainerProps) => {
-    const { children } = props;
-    return (
-        <StyledContainer>
-            { children }
-        </StyledContainer>
-    );
+  const { children } = props;
+  return (
+    <Container>
+      {children}
+      <Swiper id="main" tag="section" wrapperTag="ul" style={{ height: "85%" }} pagination>
+        {[1, 2, 3].map((i, el) => {
+          return (
+            <SwiperSlide>
+              <Slide>
+                <h1>Slide {i}</h1>
+              </Slide>
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
+    </Container>
+  );
 };
 
 export default SlideContainer;
