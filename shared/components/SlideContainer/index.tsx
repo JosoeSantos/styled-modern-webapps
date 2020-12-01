@@ -1,25 +1,27 @@
 import React from "react";
 import { Container, Slide } from "./styles";
 
-import SwiperCore, { Pagination } from "swiper";
+
+import SwiperCore, { Pagination, Keyboard } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 SwiperCore.use([Pagination]);
 interface SlideContainerProps {
-  children: React.ReactNode;
+  slides: React.ReactNode[]
 }
 
+SwiperCore.use([Keyboard])
+
 const SlideContainer = (props: SlideContainerProps) => {
-  const { children } = props;
+  const { slides } = props;
   return (
     <Container>
-      {children}
       <Swiper id="main" tag="section" wrapperTag="ul" style={{ height: "85%" }} pagination>
-        {[1, 2, 3].map((i, el) => {
+        {slides.map((Page: React.ReactNode, el) => {
           return (
-            <SwiperSlide>
+            <SwiperSlide key={el}>
               <Slide>
-                <h1>Slide {i}</h1>
+                <Page />
               </Slide>
             </SwiperSlide>
           );
