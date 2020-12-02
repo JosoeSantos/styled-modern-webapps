@@ -4,7 +4,7 @@ import { ContentSlide } from "@shared/components";
 
 const NextJsIntro = () => {
   return (
-    <ContentSlide title="O que é ">
+    <ContentSlide backgroundSrc="/nextjs.svg" title="O que é ">
       <ul>
         <li>Simplifica a motagem de um ecossitema Javascript com React</li>
         <li>Junta coisas como otimização e ssr</li>

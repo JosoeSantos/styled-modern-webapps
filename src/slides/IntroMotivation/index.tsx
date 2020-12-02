@@ -2,7 +2,7 @@ import React from 'react';
 import { ContentSlide } from '@shared/components';
 const IntroMotivation = () => {
   return (
-    <ContentSlide title="Como chegamos aqui?">
+    <ContentSlide backgroundSrc="/front.svg" title="Como chegamos aqui?">
       <ul>
         <li>Aplicações web cada vez mais completas</li>
         <li>É lento e complicado escolher, montar e manter um bom ambiente </li>
