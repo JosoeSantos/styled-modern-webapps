@@ -26,4 +26,5 @@ export const ImageBackground = styled.img`
   height: 100%;
   object-fit: contain;
   opacity: 0.1;
+  filter: grayscale(100%);
 `;

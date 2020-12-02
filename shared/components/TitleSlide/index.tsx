@@ -1,17 +1,17 @@
-import React from "react";
+import React, { FunctionComponent } from "react";
 import { StyledContainer, StyledImg } from "./styles";
 
 interface TitleSlideProps {
-  title: string;
+  title?: string;
   iconSrc: string;
 }
 
-const TitleSlide = (props: TitleSlideProps) => {
+const TitleSlide: FunctionComponent<TitleSlideProps> = (props) => {
   const { title, iconSrc } = props;
   return (
     <StyledContainer>
       <StyledImg src={iconSrc} />
-      <h1>{title}</h1>
+      {title ? <h1>{title}</h1> : props.children}
     </StyledContainer>
   );
 };
