@@ -16,7 +16,7 @@ const SlideContainer = (props: SlideContainerProps) => {
   const { slides } = props;
   return (
     <Container>
-      <Swiper id="main" tag="section" wrapperTag="ul" style={{ height: "85%" }} pagination>
+      <Swiper id="main" tag="section" wrapperTag="ul" style={{ height: "100%" }} pagination>
         {slides.map((Page: React.ElementType, el) => {
           return (
             <SwiperSlide key={el}>
