@@ -37,14 +37,17 @@ class CustomDocument extends Document {
     return (
       <Html lang="pt-BR">
         <Head>
+          <meta name="theme-color" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           <link
-            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
             rel="preload"
-            as="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+            as="font"
+            crossOrigin="anonymous"
           />
         </Head>
         <body>
+          <title>Aplicações modernas e estilosas</title>
           <Main />
           <NextScript />
         </body>

@@ -11,7 +11,7 @@ const ContentSlide: FunctionComponent<ContentSlideProps> = (props) => {
 
   return (
     <Container>
-      {backgroundSrc && <ImageBackground src={backgroundSrc} />}
+      {backgroundSrc && <ImageBackground src={backgroundSrc} alt="backgroundImage" />}
       <h2>{title}</h2>
       {children}
     </Container>
