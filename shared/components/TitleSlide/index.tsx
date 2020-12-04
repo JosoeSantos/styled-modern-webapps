@@ -3,14 +3,14 @@ import { StyledContainer, StyledImg } from "./styles";
 
 interface TitleSlideProps {
   title?: string;
-  iconSrc: string;
+  iconSrc?: string;
 }
 
 const TitleSlide: FunctionComponent<TitleSlideProps> = (props) => {
   const { title, iconSrc } = props;
   return (
     <StyledContainer>
-      <StyledImg src={iconSrc} alt="styledImg"/>
+      {iconSrc && <StyledImg src={iconSrc} alt="styledImg" />}
       {title ? <h1>{title}</h1> : props.children}
     </StyledContainer>
   );
