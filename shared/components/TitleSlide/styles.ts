@@ -6,7 +6,7 @@ export const StyledContainer = styled.div`
   align-items: center;
 `;
 
-export const StyledImg = styled.img`
+export const ImageContainer = styled.div`
   position: absolute;
   height: 100px;
   top: 3%;

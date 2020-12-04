@@ -1,16 +1,28 @@
 import React, { FunctionComponent } from "react";
-import { StyledContainer, StyledImg } from "./styles";
+import { StyledContainer, ImageContainer } from "./styles";
+import Image from "next/image";
 
 interface TitleSlideProps {
   title?: string;
-  iconSrc: string;
+  iconSrc?: string;
 }
 
 const TitleSlide: FunctionComponent<TitleSlideProps> = (props) => {
   const { title, iconSrc } = props;
   return (
     <StyledContainer>
-      <StyledImg src={iconSrc} alt="styledImg"/>
+      {iconSrc && (
+        <ImageContainer>
+          <Image
+            height={100}
+            width={200}
+            layout="intrinsic"
+            objectFit="contain"
+            src={iconSrc}
+            alt="styledImg"
+          />
+        </ImageContainer>
+      )}
       {title ? <h1>{title}</h1> : props.children}
     </StyledContainer>
   );

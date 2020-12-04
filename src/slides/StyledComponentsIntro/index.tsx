@@ -2,7 +2,7 @@ import React from "react";
 import { ContentSlide } from "@shared/components";
 const StyledComponentsIntro = () => {
   return (
-    <ContentSlide title="A proposta" backgroundSrc="nail-polish-emoji.png">
+    <ContentSlide title="A proposta" backgroundSrc="/nail-polish-emoji.png">
       <ul>
         <li>Simplificar manutenção</li>
         <li>Vendor prefixing mais simples (Compatibilidade entre browsers)</li>

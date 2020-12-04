@@ -11,6 +11,7 @@ import IntroChoice from "./IntroChoice";
 import StyledComponentsTitle from "./StyledComponentsTitle";
 import StyledComponentsIntro from "./StyledComponentsIntro";
 import StyledComponentsDemo from "./StyledComponentsDemo";
+import DiscussionDoubts from "./DiscussionDoubts";
 
 
 export default [
@@ -31,4 +32,6 @@ export default [
   StyledComponentsTitle,
   StyledComponentsIntro,
   StyledComponentsDemo,
+
+  DiscussionDoubts,
 ];
