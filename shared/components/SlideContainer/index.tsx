@@ -1,28 +1,37 @@
 import React from "react";
 import { Container, Slide } from "./styles";
 
-
-import SwiperCore, { Pagination, Keyboard } from "swiper";
+import SwiperCore, { Keyboard } from "swiper";
 import { Swiper, SwiperSlide } from "swiper/react";
+import styled from "styled-components";
 
-SwiperCore.use([Pagination]);
+SwiperCore.use([Keyboard]);
 interface SlideContainerProps {
-  slides: React.ElementType[]
+  slides: React.ElementType[];
 }
 
-SwiperCore.use([Keyboard])
+const StyledSlide = styled.div`
+  background-color: white;
+`;
 
 const SlideContainer = (props: SlideContainerProps) => {
   const { slides } = props;
   return (
     <Container>
-      <Swiper id="main" tag="section" wrapperTag="ul" style={{ height: "100%" }} pagination>
+      <Swiper
+        effect="flip"
+        keyboard={true}
+        id="main"
+        tag="section"
+        wrapperTag="ul"
+        style={{ height: "100%" }}
+      >
         {slides.map((Page: React.ElementType, el) => {
           return (
             <SwiperSlide key={el}>
-              <Slide>
+              <StyledSlide as={Slide}>
                 <Page />
-              </Slide>
+              </StyledSlide>
             </SwiperSlide>
           );
         })}
