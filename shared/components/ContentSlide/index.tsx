@@ -1,9 +1,9 @@
 import React, { FunctionComponent } from "react";
-import { Container, ImageBackground } from "./styles";
+import { Container, BackgroundContainer, ImageBackground } from "./styles";
 
 interface ContentSlideProps {
-  title: string,
-  backgroundSrc?: string,
+  title: string;
+  backgroundSrc?: string;
 }
 
 const ContentSlide: FunctionComponent<ContentSlideProps> = (props) => {
@@ -11,7 +11,17 @@ const ContentSlide: FunctionComponent<ContentSlideProps> = (props) => {
 
   return (
     <Container>
-      {backgroundSrc && <ImageBackground src={backgroundSrc} alt="backgroundImage" />}
+      {backgroundSrc && (
+        <BackgroundContainer>
+          <ImageBackground
+            width={700}
+            height={700}
+            objectFit="contain"
+            src={backgroundSrc}
+            alt="backgroundImage"
+          />
+        </BackgroundContainer>
+      )}
       <h2>{title}</h2>
       {children}
     </Container>

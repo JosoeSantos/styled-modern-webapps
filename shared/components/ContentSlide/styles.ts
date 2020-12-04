@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Image, { ImageProps } from 'next/image';
 
 export const Container = styled.div`
   display: flex;
@@ -18,13 +19,19 @@ export const Container = styled.div`
   }
 `;
 
-export const ImageBackground = styled.img`
+export const BackgroundContainer = styled.div`
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
   height: 100%;
-  object-fit: contain;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const ImageBackground = styled(Image)`
   opacity: 0.1;
   filter: grayscale(100%);
 `;
