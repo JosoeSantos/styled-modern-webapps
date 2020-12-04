@@ -16,6 +16,7 @@ const ContentSlide: FunctionComponent<ContentSlideProps> = (props) => {
           <ImageBackground
             width={700}
             height={700}
+            loading="eager"
             objectFit="contain"
             src={backgroundSrc}
             alt="backgroundImage"
