@@ -1,6 +1,6 @@
 import React from "react";
 import { ContentSlide } from "@shared/components";
-const IntroMotivation = () => {
+const IntroMotivations = () => {
   return (
     <ContentSlide backgroundSrc="/front.svg" title="Como chegamos aqui?">
       <ul>
@@ -16,4 +16,4 @@ const IntroMotivation = () => {
   );
 };
 
-export default IntroMotivation;
+export default IntroMotivations;

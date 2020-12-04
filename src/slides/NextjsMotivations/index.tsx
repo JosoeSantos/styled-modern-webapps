@@ -2,7 +2,7 @@ import React from "react";
 
 import { ContentSlide } from "@shared/components";
 
-const NextJsIntro = () => {
+const NextjsMotivations = () => {
   return (
     <ContentSlide backgroundSrc="/nextjs.svg" title="Motivações ">
       <ul>
@@ -20,4 +20,4 @@ const NextJsIntro = () => {
   );
 };
 
-export default NextJsIntro;
+export default NextjsMotivations;

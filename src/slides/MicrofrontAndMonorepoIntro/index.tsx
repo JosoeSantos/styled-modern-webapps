@@ -2,9 +2,9 @@ import React from "react";
 
 import { ContentSlide } from "@shared/components";
 
-const NextJsIntro = () => {
+const MicrofrontAndMonorepoIntro = () => {
   return (
-    <ContentSlide backgroundSrc="" title="O que é ">
+    <ContentSlide title="O que é ">
       <ul>
         <li>Bibliotecas compartilhadas</li>
         <li>Permite que a equipe use várias linguagens de programação e estruturas</li>
@@ -14,4 +14,4 @@ const NextJsIntro = () => {
   );
 };
 
-export default NextJsIntro;
+export default MicrofrontAndMonorepoIntro;
