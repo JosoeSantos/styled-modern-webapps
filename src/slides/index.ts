@@ -3,10 +3,11 @@ import NextjsIntro from "./NextjsIntro";
 import MainTitle from "./MainTitle";
 import IntroMotivation from "./IntroMotivation";
 import IntroRequirements from './IntroRequirements';
-import StyledComponentsTitle from "./StyledComponentsTitle";
-import StyledComponentsIntro from "./StyledComponentsIntro";
 import IntroTools from "./IntroTools";
 import IntroChoice from "./IntroChoice";
+import StyledComponentsTitle from "./StyledComponentsTitle";
+import StyledComponentsIntro from "./StyledComponentsIntro";
+import StyledComponentsDemo from "./StyledComponentsDemo";
 
 
 export default [
@@ -21,5 +22,6 @@ export default [
   NextjsIntro,
 
   StyledComponentsTitle,
-  StyledComponentsIntro
+  StyledComponentsIntro,
+  StyledComponentsDemo,
 ];

@@ -7,6 +7,7 @@ const StyledComponentsIntro = () => {
         <li>Simplificar manutenção</li>
         <li>Vendor prefixing mais simples (Compatibilidade entre browsers)</li>
         <li>Simplificar a definição de estilos dinâmicos</li>
+        <li>Tudo isso com o famoso css in js</li>
         {/* <li>Facilitar code spliting</li> TODO: Revisar a necessidade desse  */}
       </ul>
     </ContentSlide>
