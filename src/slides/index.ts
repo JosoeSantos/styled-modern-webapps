@@ -13,6 +13,7 @@ import StyledComponentsTitle from "./StyledComponentsTitle";
 import StyledComponentsIntro from "./StyledComponentsIntro";
 import StyledComponentsDemo from "./StyledComponentsDemo";
 import DiscussionDoubts from "./DiscussionDoubts";
+import StyledComponentsTools from "./StyledComponentsTools";
 
 
 export default [
@@ -34,6 +35,7 @@ export default [
   StyledComponentsTitle,
   StyledComponentsIntro,
   StyledComponentsDemo,
+  StyledComponentsTools,
 
   DiscussionDoubts,
 ];
