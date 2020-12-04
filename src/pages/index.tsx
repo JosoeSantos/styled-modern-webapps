@@ -1,6 +1,6 @@
 import React from "react";
 import { SlideContainer } from "@shared/components";
-import { StyledPage } from "./styles";
+import { StyledPage } from "../styles/styles";
 import Slides from '../slides';
 
 export default function Home() {
