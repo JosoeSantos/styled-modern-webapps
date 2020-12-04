@@ -1,5 +1,8 @@
 import NextjsTitle from "./NextjsTitle";
 import NextjsIntro from "./NextjsIntro";
+import NextjsMotivations from "./NextjsMotivations";
+import MicrofrontAndMonorepoTitle from "./MicrofrontAndMonorepoTitle";
+import MicrofrontAndMonorepoIntro from "./MicrofrontAndMonorepoIntro";
 import MainTitle from "./MainTitle";
 import IntroMotivation from "./IntroMotivation";
 import IntroRequirements from './IntroRequirements';
@@ -20,6 +23,10 @@ export default [
 
   NextjsTitle,
   NextjsIntro,
+  NextjsMotivations,
+
+  MicrofrontAndMonorepoTitle,
+  MicrofrontAndMonorepoIntro,
 
   StyledComponentsTitle,
   StyledComponentsIntro,
